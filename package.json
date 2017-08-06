@@ -8,7 +8,10 @@
     "start": "ng serve",
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
-    "e2e": "protractor"
+    "e2e": "protractor",
+    "build": "ng build",
+    "startApp": "node server.js",
+    "buildandStart": "ng build && node server.js"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +23,11 @@
     "@angular/platform-browser": "^2.3.1",
     "@angular/platform-browser-dynamic": "^2.3.1",
     "@angular/router": "^3.3.1",
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
     "core-js": "^2.4.1",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.3",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
